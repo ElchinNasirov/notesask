@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NotesAsk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>NotesAsk</h1>
+    <p>Answers from a folder of markdown notes. Python picks the file. A local model answers from that file only.</p>
+    <p>No paid API. This page does not call the model.</p>
+    <h2>Check</h2>
+    <pre>
+3/5
+PASS  ollama.md | llama3.2
+FAIL  jobfit.md | not in the notes
+PASS  notesask.md | not in the notes
+PASS  France refused, wrong file still cited
+FAIL  jobfit.md | quoted a different sentence
+    </pre>
+    <p><a href="https://github.com/ElchinNasirov/notesask">Code on GitHub</a></p>
+  </main>
+</body>
+</html>
